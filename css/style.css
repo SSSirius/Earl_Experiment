@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Miriam+Libre:400,700|Roboto:300,500|Overpass+Mono:300|Rubik:300,300i,400,400i,500,700');
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700|Raleway:400,600,800&display=swap');
-charset "UTF-8";
+/* charset "UTF-8"; */
 a{
        text-decoration: none;
        color: #000
@@ -16,12 +16,13 @@ html {
 body {
     overflow-x: hidden;
     position: relative;
+    min-height: 100vh;
 }
 
 .main-content{
     max-width: 1078px;
     position: relative;
-    margin: 0 auto;
+    margin: auto;
 }
 
 
@@ -30,7 +31,8 @@ h1.main-title {
     font-weight: 800;
     font-size: 20px;
     line-height: 1.5;
-    color: #000;
+    /* color: #000; */
+     color: #ededed;
     letter-spacing: 0.31px;
     margin-top: 100px;
     margin-bottom: 24px;
@@ -44,7 +46,8 @@ h1.main-title {
     sans-serif;
     font-weight: 400;
     font-size: 0.9em;
-    color: #474747;
+    /* color: #474747; */
+       color: #dddddd;
     letter-spacing: 0.31px;
     line-height: calc(25 / 16);
 }
@@ -162,12 +165,15 @@ h1.main-title {
      padding-right: 30px;
     margin-bottom:  20px;
     margin-top: 80px;
+     color: #dddddd;
+     bottom: 0;
 }
 
 .mysite {
    position: relative;
    text-decoration:none;
-   color: #474747;
+   /* color: #474747; */
+    color: #fff;
    /* font-size: 16px; */
     /*  display: inline-block; */
     border-bottom: 1px dotted black;
@@ -234,4 +240,11 @@ color: #000;
     100% {
         top: -8px;
     }
+}
+
+#home_background{
+
+    position: fixed;
+    top:0;
+    z-index: -99;
 }
