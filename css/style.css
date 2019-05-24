@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Miriam+Libre:400,700|Roboto:300,500|Overpass+Mono:300|Rubik:300,300i,400,400i,500,700');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Raleway:400,600,800&display=swap');
+charset "UTF-8";
+a{
+       text-decoration: none;
+       color: #000
+}
+
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.15;
+    /* font-size: 30px; */
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.main-content{
+    max-width: 1078px;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+h1.main-title {
+    font-family:'Raleway',sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000;
+    letter-spacing: 0.31px;
+    margin-top: 100px;
+    margin-bottom: 24px;
+    /* text-transform: uppercase; */
+}
+
+.main-text p {
+
+    margin-bottom: 8px;
+    font-family: 'Karla',
+    sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    color: #474747;
+    letter-spacing: 0.31px;
+    line-height: calc(25 / 16);
+}
+/* .main-text {
+
+    margin-bottom: 8px;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0.31px;
+    line-height: calc(25 / 16);
+} */
+/* .wk-title{
+	font-family: "Miriam Libre";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #000;
+    letter-spacing: 0.31px;
+    margin-top: 60px;
+    margin-bottom: 24px;
+    width:100%;
+    margin-bottom: 8px;
+    border-bottom: 0.5px solid #CCC;
+
+} */
+.wk-title {
+    font-family: "Miriam Libre";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 3;
+    color: #000;
+    letter-spacing: 0.31px;
+    /* align-items: center; */
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    height: 12px;
+    opacity: 0;
+    overflow: hidden;
+    vertical-align: middle;
+    /* line-height: 1.5; */
+    background: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    transition: 0.3s;
+}
+
+.wk-blog-bg img {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    
+}
+@keyframes img_srink {
+
+    0% {
+        width: 100%
+    }
+
+    100% {
+        width: 98%
+    }
+
+}
+.wk-blog-bg:hover img {
+
+    /* -webkit-filter: grayscale(100%); */
+    /* filter: invert(100%); */
+     transition:0.3s;
+}
+
+.wk-blog-bg:hover .wk-title {
+    transition:0.3s;
+    height: 36px;
+    opacity: 1;
+}
+.wk-blog-bg:hover {
+
+   /* transition: 0.3s; */
+
+}
+
+.wk-blog-bg {
+    margin-top: 60px;
+    width: 100%;
+    display: block;
+       /* border-top-right-radius: 5px;
+       border-top-left-radius: 5px; */
+       border-radius: 5px;
+    position: relative;
+       overflow: hidden;
+}
+
+
+.main-text {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.31px;
+    line-height: calc(20 / 16);
+    padding-right: 30px;
+    /*margin-bottom: 3em;*/
+}
+
+.blog-list{
+    /* margin-bottom:  100px; */
+}
+
+.footer {
+     font-family: "Roboto";
+     font-weight: 300;
+     font-size: 10px;
+     letter-spacing: 0.31px;
+     line-height: calc(20 / 16);
+     padding-right: 30px;
+    margin-bottom:  20px;
+    margin-top: 80px;
+}
+
+.mysite {
+   position: relative;
+   text-decoration:none;
+   color: #474747;
+   /* font-size: 16px; */
+    /*  display: inline-block; */
+    border-bottom: 1px dotted black;
+    /* If you want dots under the hoverable text */
+}
+
+/* mysite text */
+.mysite .mysitetext {
+    visibility: hidden;
+
+    width: 80px;
+    background-color:#555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size:0.7em;
+    /* Position the mysite text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    margin-left: 8px;
+    top:-8px;
+}
+
+/* Show the mysite text when you mouse over the mysite container */
+.mysite:hover .mysitetext {
+    
+    visibility: visible;
+    animation: jump 0.5s infinite;
+}
+
+.mysite:hover{
+    text-decoration:none;
+    background-color: #FFCD07;
+color: #000;
+}
+.mysitetext::after{
+    content: "";
+    position: absolute;
+    top: 68%;
+    right: 95%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+@keyframes jump{
+    0%{
+         top:-8px;
+    }
+    15% {
+        top: -10px;
+    }
+    30% {
+        top: -8px;
+    }
+    45% {
+        top: -10px;
+    }
+    60% {
+        top: -8px;
+    }
+    100% {
+        top: -8px;
+    }
+}
