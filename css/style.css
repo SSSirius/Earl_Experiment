@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Miriam+Libre:400,700|Roboto:300,500|Overpass+Mono:300|Rubik:300,300i,400,400i,500,700');
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700|Raleway:400,600,800&display=swap');
+
 /* charset "UTF-8"; */
-a{
-       text-decoration: none;
-       color: #000
+a {
+    text-decoration: none;
+    color: #000
 }
 
 html {
@@ -15,27 +16,28 @@ html {
 
 body {
     overflow-x: hidden;
-     overflow-y: hidden;
+    overflow-y: hidden;
     position: relative;
-    min-height: 100vh;
+    height: 200vh;
 }
 
-.main-content{
+.main-content {
     max-width: 1078px;
     position: relative;
     margin: auto;
 }
 
 
+
 h1.main-title {
-    font-family:'Raleway',sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 20px;
     line-height: 1.5;
     /* color: #000; */
-     color: #ededed;
+    color: #ededed;
     letter-spacing: 0.31px;
-    margin-top: 40vh;
+    padding-top: 40vh;
     margin-bottom: 24px;
     /* text-transform: uppercase; */
 }
@@ -44,14 +46,15 @@ h1.main-title {
 
     margin-bottom: 8px;
     font-family: 'Karla',
-    sans-serif;
+        sans-serif;
     font-weight: 400;
     font-size: 0.9em;
     /* color: #474747; */
-       color: #dddddd;
+    color: #dddddd;
     letter-spacing: 0.31px;
     line-height: calc(25 / 16);
 }
+
 /* .main-text {
 
     margin-bottom: 8px;
@@ -100,8 +103,9 @@ h1.main-title {
     position: relative;
     margin: auto;
     width: 100%;
-    
+
 }
+
 @keyframes img_srink {
 
     0% {
@@ -113,21 +117,23 @@ h1.main-title {
     }
 
 }
+
 .wk-blog-bg:hover img {
 
     /* -webkit-filter: grayscale(100%); */
     /* filter: invert(100%); */
-     transition:0.3s;
+    transition: 0.3s;
 }
 
 .wk-blog-bg:hover .wk-title {
-    transition:0.3s;
+    transition: 0.3s;
     height: 36px;
     opacity: 1;
 }
+
 .wk-blog-bg:hover {
 
-   /* transition: 0.3s; */
+    /* transition: 0.3s; */
 
 }
 
@@ -135,11 +141,11 @@ h1.main-title {
     margin-top: 60px;
     width: 100%;
     display: block;
-       /* border-top-right-radius: 5px;
+    /* border-top-right-radius: 5px;
        border-top-left-radius: 5px; */
-       border-radius: 5px;
+    border-radius: 5px;
     position: relative;
-       overflow: hidden;
+    overflow: hidden;
 }
 
 
@@ -153,30 +159,30 @@ h1.main-title {
     /*margin-bottom: 3em;*/
 }
 
-.blog-list{
+.blog-list {
     /* margin-bottom:  100px; */
 }
 
 .footer {
-     font-family: "Roboto";
-     font-weight: 300;
-     font-size: 10px;
-     letter-spacing: 0.31px;
-     line-height: calc(20 / 16);
-     padding-right: 30px;
-    margin-bottom:  20px;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 0.31px;
+    line-height: calc(20 / 16);
+    padding-right: 30px;
+    margin-bottom: 20px;
     margin-top: 80px;
-     color: #dddddd;
-     bottom: 0;
+    color: #dddddd;
+    bottom: 0;
 }
 
 .mysite {
-   position: relative;
-   text-decoration:none;
-   /* color: #474747; */
+    position: relative;
+    text-decoration: none;
+    /* color: #474747; */
     color: #000;
-        background-color: #fff;
-   /* font-size: 16px; */
+    background-color: #fff;
+    /* font-size: 16px; */
     /*  display: inline-block; */
     border-bottom: 1px dotted #fff;
     /* If you want dots under the hoverable text */
@@ -187,32 +193,33 @@ h1.main-title {
     visibility: hidden;
 
     width: 80px;
-    background-color:#Fff;
+    background-color: #Fff;
     color: #fff;
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-    font-size:0.7em;
+    font-size: 0.7em;
     /* Position the mysite text - see examples below! */
     position: absolute;
     z-index: 1;
     margin-left: 8px;
-    top:-8px;
+    top: -8px;
 }
 
 /* Show the mysite text when you mouse over the mysite container */
 .mysite:hover .mysitetext {
-    
+
     /* visibility: visible; */
     animation: jump 0.5s infinite;
 }
 
-.mysite:hover{
-    text-decoration:none;
+.mysite:hover {
+    text-decoration: none;
     background-color: #FFCD07;
-color: #000;
+    color: #000;
 }
-.mysitetext::after{
+
+.mysitetext::after {
     content: "";
     position: absolute;
     top: 68%;
@@ -223,30 +230,109 @@ color: #000;
     border-color: transparent #FFF transparent transparent;
 }
 
-@keyframes jump{
-    0%{
-         top:-8px;
+@keyframes jump {
+    0% {
+        top: -8px;
     }
+
     15% {
         top: -10px;
     }
+
     30% {
         top: -8px;
     }
+
     45% {
         top: -10px;
     }
+
     60% {
         top: -8px;
     }
+
     100% {
         top: -8px;
     }
 }
 
-#home_background{
+@keyframes shake {
 
-    position: fixed;
-    top:0;
+    10%,
+    90% {
+        transform: rotate(5deg);
+
+        /* rotate:deg(2); */
+    }
+
+    20%,
+    80% {
+        transform: rotate(-5deg);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: rotate(5deg);
+    }
+
+    40%,
+    60% {
+        transform: rotate(-5deg);
+    }
+}
+
+#home_background {
+
+    position: absolute;
+    top: 0;
     z-index: -99;
+}
+
+.view-page {
+    height: 100vh;
+    position: relative;
+
+
+}
+
+#home-down-btn {
+    position: absolute;
+    top: 94vh;
+    right: 0vw;
+    height: 6vh;
+    width: 10vw;
+    color: #fff;
+    z-index: 1;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 30px;
+
+}
+
+#home-into {
+    /* position: fixed; */
+    z-index: 0;
+}
+
+#home-cate {
+    z-index: 4;
+    /* background-color: #FFF; */
+
+}
+
+
+.greeting {
+    opacity: 0;
+    transition: 1s;
+}
+
+#home-down-btn:hover .greeting {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    opacity: 1;
+    transition: 1s;
+
 }

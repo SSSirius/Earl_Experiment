@@ -3,14 +3,15 @@
 var constellation = [];
 var n;
 var d;
-
+var re_h = 1;
+var part=0.85;
 function setup() {
     let cnv = createCanvas(windowWidth, windowHeight);
     cnv.id('home_background');
     pixelDensity(1); // Set 1 because it's too slow on firefox
     //pixelDensity(displayDensity());
     n = 80;
-
+//  noLoop();
     for (var i = 0; i <= n; i++) {
         constellation.push(new star());
     }
@@ -26,6 +27,7 @@ function draw() {
     fill(0, 0, 0, 220);
     noStroke();
     rect(0, 0, width, height);
+    // rect(0, height - 50, width*0.5, 50);
     blendMode(ADD);
     strokeWeight(.5);
     stroke(255, 255, 255, 180);
@@ -40,9 +42,52 @@ function draw() {
             }
         }
     }
+    // blendMode(BLEND);
+ 
+    if (mouseX > width * 0.8 && mouseY > height * 0.85){
 
+        re_h = re_h * part + (1 - part) * (0.4 + 0.1*sin(frameCount * 0.01));
+       
+    }else{
+        re_h = re_h * part + (1 - part) * 1.1;
+
+    }
+
+    reveal(re_h);
+    
+    // rect(width * 0.7, height * 0.7, width * 0.3, height * 0.3);
 }
+function reveal(reh){
 
+    blendMode(BLEND);
+    fill(255, 255, 255);
+    noStroke();
+    // noFill();
+    // stroke(255);
+//     beginShape();
+//     curveVertex(width * 0.7, height);
+//     curveVertex(width * 0.7, height);
+//     // for (var n = 0; n < 10; n ++); {
+//     //     curveVertex(n * width * 0.03 + width * 0.7, height * 0.85 + height * 0.02 * sin(frameCount * 0.01) * cos(n*1.3));
+//     //     console.log(n * width * 0.1, height * cos(20));
+//     // }
+//     // beginShape();
+//     curveVertex( width * 0.1 + width * 0.7, height * 0.85 + height * 0.02 * sin(frameCount * 0.01) * sin(0));
+//     curveVertex(width * 0.2 + width * 0.7, height * 0.85 + height * 0.02 * cos(frameCount * 0.01) *sin(30));
+//     curveVertex(width * 0.25 + width * 0.7, height * 0.85 + height * 0.02 * sin(frameCount * 0.01) * sin(60));
+//    curveVertex( width * 0.3+ width * 0.7, height * 0.85 + height * 0.02 * cos(frameCount * 0.01) * sin(90)); // curveVertex(width * 0.8, height * 0.9 + height*0.02*sin(frameCount*0.01));
+//     // curveVertex(width * 0.85, height * 0.85+ height * 0.02 * cos(frameCount * 0.01));
+//     // curveVertex(width * 0.9, height * 0.85 + height * 0.02 * sin(frameCount * 0.01));
+//     // curveVertex(width * 0.95, height * 0.85 + height * 0.02 * cos(frameCount * 0.01));
+//     // curveVertex(width, height*0.8);
+//     curveVertex(width , height);
+//     curveVertex(width , height);
+  
+  
+//     endShape();
+    // endShape();
+    bezier(width * 0.7, height, width, height, width * 1.2, height * reh, width*1.2, height*1.2);
+}
 function star() {
 
     this.a = random(5 * TAU); // "5*TAU" => render will be more homogeneous
