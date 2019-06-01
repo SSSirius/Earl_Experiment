@@ -22,7 +22,7 @@ function setup() {
 function draw() {
 
     background('#000000');
-
+ if (windowWidth > 600){
     blendMode(BLEND);
     fill(0, 0, 0, 220);
     noStroke();
@@ -54,7 +54,7 @@ function draw() {
     }
 
     reveal(re_h);
-    
+    }
     // rect(width * 0.7, height * 0.7, width * 0.3, height * 0.3);
 }
 function reveal(reh){
