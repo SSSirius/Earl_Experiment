@@ -11,6 +11,8 @@ html {
     box-sizing: border-box;
     font-family: sans-serif;
     line-height: 1.15;
+    width: 100vw;
+    overflow-x: hidden;
     /* font-size: 30px; */
 }
 
@@ -18,7 +20,7 @@ body {
     overflow-x: hidden;
     /* overflow-y: hidden; */
     position: relative;
-    height: 200vh;
+    /* height: 200vh; */
 }
 
 .main-content {
