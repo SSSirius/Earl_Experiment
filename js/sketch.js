@@ -44,7 +44,7 @@ function draw() {
     }
     // blendMode(BLEND);
  
-    if (mouseX > width * 0.8 && mouseY > height * 0.85){
+    if (mouseX > width * 0.8 && mouseY > height * 0.85 && mouseY < height) {
 
         re_h = re_h * part + (1 - part) * (0.4 + 0.1*sin(frameCount * 0.01));
        
