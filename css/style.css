@@ -163,6 +163,12 @@ p {
     /* border: solid #ddd 1px; */
 }
 
+.home-cate-exp.home-creative:hover {
+    /* transition: 0.3s; */
+    /* height: 40vh; */
+    box-shadow: none;
+    /* border: solid #ddd 1px; */
+}
 .home-ui {
     background-image: url(../img/home/06.png);
     background-size: cover;
@@ -318,7 +324,10 @@ p {
 .home-creative {
 align-content: center;
 text-align: center;
-line-height: 40vh;
+line-height: 2em;
+padding-top: calc(50% - 1em);
+padding-right: 30px;
+padding-left: 30px;
 
 }
 .wk-blog-bg {
@@ -362,7 +371,7 @@ line-height: 40vh;
     padding-right: 30px;
     margin-bottom: 20px;
     /* margin-top: 80px; */
-    color: #dddddd;
+    color: #333;
     bottom: 0;
 }
 
