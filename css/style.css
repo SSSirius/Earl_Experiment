@@ -694,7 +694,7 @@ p {
         /* color: #000; */
         color: #ededed;
         letter-spacing: 0.31px;
-        padding-top: 30vh;
+        padding-top: 20vh;
         margin-bottom: 24px;
         /* text-transform: uppercase; */
     }
@@ -825,5 +825,6 @@ p {
         width: 100vw;
         margin-left: -15px;
         padding: 30px;
+        height: 80vh;
     }
 }
