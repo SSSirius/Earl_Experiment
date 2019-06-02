@@ -256,7 +256,7 @@ p {
     background-image: url(../img/home/03.png);
     background-size: cover;
     /* opacity:0; */
-    background-position-x: 85%;
+    background-position-x: 95%;
     background-position-y: 20px;
     transition: 0.3s ease-in-out;
 }
