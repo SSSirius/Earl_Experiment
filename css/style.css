@@ -448,13 +448,13 @@ p {
 .footer {
     font-family: "Roboto";
     font-weight: 300;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.31px;
     line-height: calc(20 / 16);
     padding-right: 30px;
     margin-bottom: 20px;
     /* margin-top: 80px; */
-    color: #333;
+    color: #4f5356;
     bottom: 0;
 }
 
