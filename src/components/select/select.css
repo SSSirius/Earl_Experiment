@@ -1,0 +1,48 @@
+.sel-img{
+transition: 200ms ease-out;
+
+}
+.sel{
+
+    /* border-radius: 5px; */
+    animation: fadeIn 3000ms forwards;
+    overflow: hidden;
+    transition: 200ms ease-out;
+     opacity: 0;
+    
+}
+.home-more {
+    align-content: center;
+    text-align: center;
+    line-height: 2em;
+    padding-top: calc(50% - 1em);
+    padding-right: 30px;
+    padding-left: 30px;
+    font-family: 'Karla',
+    sans-serif;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 0.9em;
+    /* color: #474747; */
+    color: #444;
+    border-radius: 5px;
+    letter-spacing: 0px;
+    line-height: calc(25 / 16);
+
+}
+.sel:hover img{
+    transform: scale(1.02);
+    transition: 200ms ease-out;
+}
+@keyframes fadeIn{
+    from {
+        /* transform: translateY(10px); */
+        opacity: 0;
+    }
+
+    to {
+     transform: translateY(0);
+        opacity: 1
+    }
+}
+

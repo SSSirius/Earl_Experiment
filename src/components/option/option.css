@@ -1,0 +1,550 @@
+.home-cate {
+    z-index: 4;
+    padding-top: 54px;
+    position: relative;
+    align-content: center;
+    height: calc(100% - 65px);
+    min-height: calc(100vh - 65px);
+    align-items: center;
+    /* display: flex */
+}
+
+.select-result {
+    align-content: center;
+    /* min-height: 100%; */
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+    grid-gap: 15px;
+    /* justify-items: center; */
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 30%);
+    transition: 300ms ease;
+    animation: fadeInUp 300ms forwards;
+
+}
+.unselect .select-result{
+
+    animation: none;
+}
+
+.blog-list {
+    /* margin-bottom: 100px; */
+    align-content: center;
+    min-height: 100%;
+    /* display: grid;
+   
+    grid-gap: 15px;
+
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 30%);
+    transition: 300ms ease; */
+    /* margin-top: 20vh; */
+}
+
+.unselect {
+    margin-top: 20vh;
+    transition: 300ms ease;
+
+}
+
+
+
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+
+
+.wk-blog-bg img {
+    position: relative;
+    margin: auto;
+    width: 100%;
+
+}
+
+.wk-blog-bg {
+    /* margin-top: 60px; */
+    width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-title {
+    font-family: "Miriam Libre";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 40px;
+    color: #000;
+    letter-spacing: 0.31px;
+    /* align-items: center; */
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    opacity: 1;
+    display: block;
+    overflow: hidden;
+    /* vertical-align: middle; */
+    /* line-height: 1.5; */
+    background: rgba(255, 255, 255, 0.4);
+    transition: 300ms ease;
+}
+
+.unselect .btn-title {
+    display: none;
+}
+
+
+
+.btnbar {
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    display: grid;
+
+    grid-gap: 15px;
+    /* margin-top: 40px;
+    margin-bottom: 20px;
+    */
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 30%);
+    /* grid-template-columns: repeat(6, 15%); */
+    animation: BarDisappear 300ms forwards;
+    height: 0;
+
+
+}
+
+.unselect .btnbar {
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    display: grid;
+    grid-gap: 15px;
+    height: auto;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 30%);
+    animation: fadeInDown 300ms forwards;
+
+}
+
+.btntabs {
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    display: grid;
+    grid-gap: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    grid-template-columns: repeat(6, 15%);
+    animation: fadeInUp 300ms forwards;
+
+}
+
+.unselect .btntabs {
+    animation: fadeOutDown 300ms forwards;
+}
+
+
+
+.home-cate-exp {
+    height: 40vh;
+    transition: 0.3s;
+    background: #FFF;
+    width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: 300ms ease;
+    /* border: solid #000 1px; */
+}
+
+.main-text.active .btn-title {
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.1s;
+}
+
+.main-text {
+    transition: 0.3s;
+    /* margin-top: 40px; */
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    /* height: 40vh; */
+    /* box-shadow: #ddd 0px 2px 5px; */
+    /* border: solid #ddd 1px; */
+}
+
+.main-text:hover {
+    transition: 0.3s;
+    /* height: 40vh; */
+    box-shadow: #ddd 0px 2px 5px;
+    /* border: solid #ddd 1px; */
+}
+
+.unselect .main-text {
+    margin-bottom: 8px;
+    font-family: 'Karla',
+        sans-serif;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 0.9em;
+    /* color: #474747; */
+    color: #000;
+    border-radius: 5px;
+    letter-spacing: 0px;
+    line-height: calc(25 / 16);
+
+}
+
+.unselect .main-text:hover {
+    transition: 0.3s;
+    /* height: 40vh; */
+    box-shadow: #ddd 0px 2px 5px;
+    /* border: solid #ddd 1px; */
+}
+
+.wk-title {
+    display: none;
+}
+
+.unselect .wk-title {
+    font-family: "Miriam Libre";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 3;
+    color: #000;
+    display: block;
+    letter-spacing: 0.31px;
+    /* align-items: center; */
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    height: 12px;
+    opacity: 0;
+    overflow: hidden;
+    /* vertical-align: middle; */
+    /* line-height: 1.5; */
+    background: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    transition: 100ms ease;
+}
+
+.unselect .main-text:hover .wk-title {
+    transition: 300ms ease;
+    height: 36px;
+    opacity: 1;
+}
+
+
+
+.home-ui {
+    background-image: url(../../img/home/06.png);
+    background-size: cover;
+    /* opacity:0; */
+    background-position-x: 50%;
+    background-position-y: -15px;
+    transition: 0.3s ease;
+}
+
+.home-ui:hover {
+    transition: 0.3s ease;
+    /* background-image: url(../../img/home/031.png); */
+    background-size: cover;
+    /* opacity:0; */
+    /* background-color: #000; */
+    background-position-x: 50%;
+    background-position-y: 5px;
+}
+
+.home-ui:before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    background-position-x: 50%;
+    background-position-y: -15px;
+    opacity: 0;
+    /* background-size: 90px,auto; */
+    width: 100%;
+    transition: 0.3s ease;
+    /* background-repeat: no-repeat; */
+    background-image: url(../../img/home/05.png);
+    background-size: cover;
+}
+
+.home-ui:hover:before {
+    transition: 0.3s ease;
+    content: "";
+    position: absolute;
+    background-position-x: 40%;
+    background-position-y: -5px;
+    height: 100%;
+    width: 100%;
+
+    opacity: 1;
+    /* background-image: url(../../img/home/011.png); */
+    background-size: cover;
+}
+
+.home-ui:after {
+    transition: 0.3s ease;
+    content: "";
+    position: absolute;
+    /* background-position-x:50%; */
+    /* background-position-y: 20px; */
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-position-x: 50%;
+    background-position-y: -15px;
+    background-image: url(../../img/home/04.png);
+    background-size: cover;
+}
+
+.home-ui:hover:after {
+    transition: 0.3s ease;
+    content: "";
+    position: absolute;
+
+    background-position-x: 30%;
+    background-position-y: -30px;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    /* background-image: url(../../img/home/021.png); */
+    background-size: cover;
+}
+
+
+
+.home-xr {
+    background-image: url(../../img/home/03.png);
+    background-size: cover;
+    /* opacity:0; */
+    background-position-x: 95%;
+    background-position-y: 20px;
+    transition: 0.3s ease;
+}
+
+.home-xr:hover {
+    transition: 0.3s ease;
+    /* background-image: url(../../img/home/031.png); */
+    background-size: cover;
+    /* opacity:0; */
+    /* background-color: #000; */
+    background-position-x: 25%;
+    background-position-y: -10px;
+}
+
+.home-xr:before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    background-position-x: -20%;
+    background-position-y: -40px;
+    opacity: 0;
+    /* background-size: 90px,auto; */
+    width: 100%;
+    transition: 0.3s ease;
+    /* background-repeat: no-repeat; */
+    background-image: url(../../img/home/01.png);
+    /* background-size: cover; */
+}
+
+.home-xr:hover:before {
+    transition: 0.3s ease;
+    content: "";
+    position: absolute;
+    background-position-x: 25%;
+    background-position-y: -10px;
+    height: 100%;
+    width: 100%;
+
+    opacity: 1;
+    /* background-image: url(../../img/home/011.png); */
+    background-size: cover;
+}
+
+.home-xr:after {
+    transition: 0.3s ease;
+    content: "";
+    position: absolute;
+    background-position-x: 0%;
+    /* background-position-y: 20px; */
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-image: url(../../img/home/02.png);
+    /* background-size: cover; */
+}
+
+.home-xr:hover:after {
+    transition: 0.3s ease;
+    content: "";
+    position: absolute;
+
+    background-position-x: 20%;
+    background-position-y: -10px;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    /* background-image: url(../../img/home/021.png); */
+    background-size: cover;
+}
+
+.home-creative {
+    background-image: url(../../img/home/07.png);
+    background-size: cover;
+    /* opacity:0; */
+    background-position-x: 40%;
+    background-position-y: -10px;
+    transition: 0.3s ease;
+}
+
+.home-creative:hover {
+    transition: 0.3s ease;
+    /* background-image: url(../../img/home/031.png); */
+    background-size: cover;
+    /* opacity:0; */
+    /* background-color: #000; */
+    background-position-x: 50%;
+    background-position-y: 5px;
+}
+
+.home-creative:before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    background-position-x: 43%;
+    background-position-y: -8px;
+    opacity: 1;
+    /* background-size: 90px,auto; */
+    width: 100%;
+    transition: 0.3s ease;
+    /* background-repeat: no-repeat; */
+    background-image: url(../../img/home/08.png);
+    background-size: cover;
+}
+
+.home-creative:hover:before {
+    transition: 0.3s ease;
+    content: "";
+    position: absolute;
+    background-position-x: 50%;
+    background-position-y: 5px;
+    height: 100%;
+    width: 100%;
+
+    opacity: 1;
+    /* background-image: url(../../img/home/011.png); */
+    background-size: cover;
+}
+
+.home-creative:after {
+    transition: 0.3s ease;
+    content: "";
+    position: absolute;
+    background-position-x: 40%;
+    background-position-y: -10px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-image: url(../../img/home/09.png);
+    background-size: cover;
+}
+
+.home-creative:hover:after {
+    transition: 0.3s ease;
+    content: "";
+    position: absolute;
+
+    background-position-x: 50%;
+    background-position-y: 5px;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    /* background-image: url(../../img/home/021.png); */
+    background-size: cover;
+}
+
+.sel-img {
+    width: 100%;
+}
+
+
+
+/* ======================animations==================== */
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(10vh);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@keyframes fadeOutDown {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(10vh);
+        opacity: 0
+    }
+}
+
+@keyframes img_srink {
+
+    0% {
+        width: 100%
+    }
+
+    100% {
+        width: 98%
+    }
+
+}
+
+@keyframes BarDisappear {
+    0% {
+        opacity: 1;
+        visibility: visible
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden
+    }
+
+}
