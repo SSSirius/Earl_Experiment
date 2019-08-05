@@ -66,7 +66,10 @@ const ScrolldownBody = props => {
 }
     class ScrollDown extends Component {
         scrollTop = () =>{
+
+            if (typeof window !== "undefined") {
             scroll.scrollTo(window.innerHeight);
+        }
     //  console.log(window.innerHeight);
         }
 

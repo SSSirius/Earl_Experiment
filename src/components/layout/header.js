@@ -73,24 +73,28 @@ state = {
   opacity: 0
 };
 componentDidMount = ()=> {
-    window.addEventListener('scroll', this.handleScroll);
+  if (typeof window !== "undefined") {
+    window.addEventListener('scroll', this.handleScroll);}
   };
 
   componentWillUnmount=() => {
-    window.removeEventListener('scroll', this.handleScroll);
+    if (typeof window !== "undefined") {
+    window.removeEventListener('scroll', this.handleScroll);}
   };
 
   handleScroll =(event) =>{
+    if (typeof window !== "undefined") {
     let scrollTop = event.srcElement.scrollingElement.scrollTop;
       // itemTranslate = scrollTop;
   // console.log(event.srcElement.body);
+
   let H = window.innerHeight;
   var op = (scrollTop - H * 0.7) / (H * 0.3);
   if (op < 0) op = 0;
   if (op > 1) op = 1;
     this.setState({
       opacity: op
-    });
+    });}
   };
 
 render() {
