@@ -11,7 +11,7 @@ import PropTypes from "prop-types"
 // import P5Wrapper from 'react-p5-wrapper';
 import Header from "./header"
 // import sketch from "../bgsketch/sketch";
-// import ScrollDown from "../bgsketch/scrolldown"
+import ScrollDown from "../bgsketch/scrolldown"
 // import "./layout.css"
 import "../style.css"
 const Layout = ({ children }) => {
@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
    
  {/* siteTitle={data.site.siteMetadata.title} */}
       <Header />
-      {/* < ScrollDown /> */}
+      < ScrollDown />
       <div style={{
           margin: `0 auto`,
           maxWidth: 960,
