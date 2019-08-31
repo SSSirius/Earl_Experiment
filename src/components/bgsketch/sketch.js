@@ -5,7 +5,8 @@ export default function sketch(p) {
     let d;
 
     p.setup = function () {
-        p.createCanvas(p.windowWidth, p.windowHeight);
+        // p.createCanvas(p.windowWidth, p.windowHeight);
+         p.createCanvas(1100, 800);
         p.pixelDensity(1); // Set 1 because it's too slow on firefox
         //pixelDensity(displayDensity());
         n = 80;
@@ -25,7 +26,7 @@ export default function sketch(p) {
 
     p.draw = function () {
         p.background('#000000');
-        if (p.windowWidth > 600) {
+        // if (p.windowWidth > 600) {
             p.push();
             // p.translate(-p.width * 0.5, -p.height * 0.5)
             p.blendMode(p.BLEND);
@@ -52,7 +53,7 @@ export default function sketch(p) {
             }
             p.pop();
             // reveal(re_h);
-        }
+        // }
     };
 
     p.star = function () {

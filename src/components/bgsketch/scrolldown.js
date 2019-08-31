@@ -4,11 +4,11 @@ import React, {
 } from "react"
 // import {ReactDOM}from "react-dom";
 // import * as Scroll from 'react-scroll';
-import {
+// import {
 
-    animateScroll as scroll,
+//     animateScroll as scroll,
     
-} from 'react-scroll'
+// } from 'react-scroll'
 // var React = require('react');
 // var Scroll = require('react-scroll');
 
@@ -67,35 +67,11 @@ const ScrolldownBody = props => {
     class ScrollDown extends Component {
         scrollTop = () =>{
 
-            if (typeof window !== "undefined") {
-            scroll.scrollTo(window.innerHeight);
-        }
+        //     if (typeof window !== "undefined") {
+        //     scroll.scrollTo(window.innerHeight);
+        // }
     //  console.log(window.innerHeight);
-        }
-
-        easeout = function (position, destination, rate, callback) {
-            if (position === destination || typeof destination !== 'number') {
-                return false;
-            }
-            destination = destination || 0;
-            rate = rate || 4;
-            if (!window.requestAnimationFrame) {
-                window.requestAnimationFrame = function (fn) {
-                    return setTimeout(fn, 17);
-                }
-            }
-
-            var step = function () {
-                position = position + (destination - position) / rate;
-                if (Math.abs(destination - position) < 1) {
-                    callback(destination, true);
-                    return;
-                }
-                callback(position, false);
-                requestAnimationFrame(step);
-            };
-            step();
-        }
+        } 
         render() {
 
             return (
