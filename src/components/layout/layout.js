@@ -8,10 +8,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
-import P5Wrapper from 'react-p5-wrapper';
+// import P5Wrapper from 'react-p5-wrapper';
 import Header from "./header"
-import sketch from "../bgsketch/sketch";
-import ScrollDown from "../bgsketch/scrolldown"
+// import sketch from "../bgsketch/sketch";
+// import ScrollDown from "../bgsketch/scrolldown"
 // import "./layout.css"
 import "../style.css"
 const Layout = ({ children }) => {
@@ -35,12 +35,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <P5Wrapper sketch={sketch} />
+    {/* <P5Wrapper sketch={sketch} /> */}
 
    
  {/* siteTitle={data.site.siteMetadata.title} */}
       <Header />
-      < ScrollDown />
+      {/* < ScrollDown /> */}
       <div style={{
           margin: `0 auto`,
           maxWidth: 960,
